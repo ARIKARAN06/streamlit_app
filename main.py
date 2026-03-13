@@ -6,6 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 working_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = f"{working_dir}/heart_disease_model.sav"
+model_path = f"{working_dir}/heart_disease_model.sav"
 with open(model_path,'rb') as file:
   model = pickle.load(file)
 st.title("Heart Disease Prediction App") 
@@ -72,5 +73,6 @@ if st.button('Classify'):
 
 
   
+
 
 
